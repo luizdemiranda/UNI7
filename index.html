@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+
+        body, header {
+            background-color: #202020;
+            font-family: Arial, Helvetica, sans-serif;
+            scroll-behavior: smooth;
+        }
+        header {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #303030;
+            height: 10vh;
+        }
+        nav {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        nav > a {
+            color: #BBBBBB;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px;
+            width: 800px;
+            height: 800px;
+            margin: auto;
+            background-color: #F0F0F0;
+        }
+        fieldset {
+            display: flex;
+            flex-flow: column wrap;
+            gap: 20px;
+            height: 500px;
+            width: 500px;
+            padding: 40px;
+        }
+        legend {
+            color: #bbbbbb;
+            background-color: #202020;
+            padding: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-flow: column wrap;
+            gap: 10px;
+        }
+        input {
+            text-align: center;
+            padding: 10px;
+        }
+        footer {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            padding: 10px;
+            background-color: #252525;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aula de GIT e JavaScript</h1>
+        <nav>
+            <a href="#hero-content">Home</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero-content">
+            <fieldset>
+                <legend>Cadastro de compras</legend>
+                <label for="cupom">Digite um cupom!</label>
+                <input type="text" name="cupom" id="userCupom">
+                <form method="post">
+                    <p>
+                        <label for="product1">Produto 1</label>
+                        <input type="radio" name="product" id="product1" value="150">
+                    </p>
+                    <p>
+                        <label for="product2">Produto 2</label>
+                        <input type="radio" name="product" id="product2" value="100">
+                    </p>
+                    <div id="cupom"></div>
+                    <div id="subtotal"></div>
+                    <input type="submit" value="Enviar">
+                </form>      
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Desenvolvido por Luiz Miranda - 56055862</p>
+    </footer>
+</body>
+</html>
